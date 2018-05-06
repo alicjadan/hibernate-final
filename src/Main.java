@@ -124,7 +124,13 @@ public class Main {
 		newStudent.setSurname("Tr¹balski");
 		newStudent.setPesel("12345678");
 		
+		Teacher newTeacher = new Teacher();
+		newTeacher.setName("Stanislaw");
+		newTeacher.setSurname("Kot");
+		newTeacher.setPesel("55101009678");
+		
 		newClass.addStudent(newStudent);
+		newClass.addTeacher(newTeacher);
 		newSchool.addClass(newClass);
 		
 		Transaction transaction = session.beginTransaction();
